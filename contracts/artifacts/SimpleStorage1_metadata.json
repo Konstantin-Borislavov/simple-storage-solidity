@@ -26,6 +26,25 @@
 						"type": "uint256"
 					}
 				],
+				"name": "multiply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
 				"name": "set",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -45,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage1.sol": "SimpleStorage"
+			"contracts/SimpleStorage1.sol": "SimpleStorage1"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -60,11 +79,11 @@
 	},
 	"sources": {
 		"contracts/SimpleStorage1.sol": {
-			"keccak256": "0x103758fd0ee766b838c0537edad8023c08df4c365c3745a08f420adcadec5351",
+			"keccak256": "0x923eb0818a86952ed971cf6d30bddcc6ba8e06953511ec4a6999f81e4a25579a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7be577e4f3a50e1f8421bf066b7e11f360e3ed7a10a7e67a9b2c9ff531f5cf90",
-				"dweb:/ipfs/QmWWuns6GTHZMganFEDxCmGJGBAvEY722NBPw9mTFG3mZc"
+				"bzz-raw://42cca271eef7a1a8414abd2ecc14d0a72058f65f52e29b90482abacba394aa60",
+				"dweb:/ipfs/QmP7gAhNweYw65qCRQVQnUyp28S72Qmn2NJgJzB3C4wFLw"
 			]
 		}
 	},
