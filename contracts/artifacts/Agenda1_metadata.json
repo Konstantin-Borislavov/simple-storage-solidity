@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "agenda",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Agenda.sol": "Agenda1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Agenda.sol": {
+			"keccak256": "0x906d40fa93395aabc98455d775b7855bed810bb23e599cedbaa2b0058e7e0363",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7dbd92c7cd395bfeeb2a5d3167ae5c79d001b8cfb4879ef320749c343b81c3c6",
+				"dweb:/ipfs/QmUz55Yc3oJ7GfnQFuAk9uaKVFgH2qXBrBCdtGXD8mG4c9"
+			]
+		}
+	},
+	"version": 1
+}
