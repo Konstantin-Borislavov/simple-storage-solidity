@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.27+commit.40a35a09"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -9,6 +9,25 @@
 				"inputs": [],
 				"stateMutability": "payable",
 				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "borrowers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -45,25 +64,6 @@
 					}
 				],
 				"name": "clients",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "debtors",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -115,7 +115,11 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"withdraw(uint256)": {
+					"notice": "Para evitar una situacion de corralito, si el dinero que hay en el banco llega a menos del 10% del total depositado por los clientes, estos solo podran retirar la cantidad resultante de restar sus deudas a su dinero depositado."
+				}
+			},
 			"version": 1
 		}
 	},
@@ -136,11 +140,11 @@
 	},
 	"sources": {
 		"contracts/DBank.sol": {
-			"keccak256": "0xb8e671ce5e8619816611a252fb84f96f16f058c4ded980dd31c6b9c57c05d692",
+			"keccak256": "0x93faa588e8be60ae36acaed0bc7a3ad4dd6859413c8c79c0f2659dc71e36bcd2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e90d9a6624cf2f08ee4f89e154bcff4d2e51056b81f6adacde8780b9ff3946c0",
-				"dweb:/ipfs/QmbAfcWs59U7eJGit6ZzjsGh6v74Z5ocpnJTntuBa5qyqG"
+				"bzz-raw://ab78656ee8759f95a210d5f584b0acad5334c0ffe4377d40f862f621ac3bc271",
+				"dweb:/ipfs/QmXq1LNy1WVfiTCDgaCfJdUHRoPx8pmvtJJDM2iqqa2nKo"
 			]
 		}
 	},
